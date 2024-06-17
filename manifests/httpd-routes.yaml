@@ -1,0 +1,19 @@
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: httpd-enterprise-routes
+spec:
+  parentRefs:
+  - name: httpd-enterprise-gateway
+    sectionName: http
+  hostnames:
+  - content.kevharv.com
+  rules:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /
+    backendRefs:
+    - name: webinfra-http
+      port: 80

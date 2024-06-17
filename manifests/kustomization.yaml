@@ -1,6 +1,6 @@
 ---
 resources:
-  - PersistentVolumeClaim.yaml
-  - Service.yaml
-  - ConfigMap.yaml
-  - Deployment.yaml
+  - httpd-pvc.yaml
+  - httpd-service.yaml
+  - httpd-configuration.yaml
+  - httpd-deployment.yaml

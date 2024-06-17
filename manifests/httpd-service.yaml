@@ -7,9 +7,9 @@ metadata:
     app: webinfra
 spec:
   ports:
-    - name: http
+    - name: webinfra-http
       port: 80
-    - name: webdav
+    - name: webinfra-webdav
       port: 81
   selector:
     app: webinfra
